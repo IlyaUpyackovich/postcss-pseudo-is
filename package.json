@@ -1,6 +1,6 @@
 {
   "name": "postcss-pseudo-is",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PostCSS plugin to transform the :is() CSS pseudo-class into more compatible CSS selectors.",
   "keywords": [
     "postcss",
@@ -45,7 +45,10 @@
     "prettier": "^2.0.5"
   },
   "eslintConfig": {
-    "extends": ["eslint-config-postcss", "plugin:prettier/recommended"]
+    "extends": [
+      "eslint-config-postcss",
+      "plugin:prettier/recommended"
+    ]
   },
   "engines": {
     "node": ">=8.0.0"
