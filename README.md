@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/postcss-pseudo-is.svg)](https://www.npmjs.com/package/postcss-pseudo-is)
+
 # PostCSS Pseudo Is
 
 [PostCSS] plugin to transform the :is() CSS pseudo-class into more compatible CSS selectors.
