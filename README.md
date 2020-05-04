@@ -1,4 +1,6 @@
-[![npm version](https://badge.fury.io/js/postcss-pseudo-is.svg)](https://www.npmjs.com/package/postcss-pseudo-is)
+[![npm version](https://img.shields.io/npm/v/postcss-pseudo-is?style=for-the-badge)][npm] [![npm downloads](https://img.shields.io/npm/dm/postcss-pseudo-is?style=for-the-badge)][npm]
+
+[npm]: https://www.npmjs.com/package/postcss-pseudo-is
 
 # PostCSS Pseudo Is
 
@@ -37,6 +39,15 @@ aside section h1, aside article h1, aside aside h1, aside nav h1,
 nav section h1, nav article h1, nav aside h1, nav nav h1 {
   /* Output example */
 }
+```
+
+## Install
+```
+npm i -D postcss-pseudo-is
+```
+or
+```
+yarn add -D postcss-pseudo-is
 ```
 
 ## :warning: Warning :warning:
