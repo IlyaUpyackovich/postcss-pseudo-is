@@ -5,10 +5,12 @@ let processor = parser(rule => {
   return new Promise(resolve => {
     rule.each(selector => {
       let lastSelectorsList = new Set([selector])
+      let detectedPseudoIs = false
 
       selector.walkPseudos(pseudo => {
         if (pseudo.value !== ':is') return
 
+        detectedPseudoIs = true
         let newSelectorsList = new Set()
         let index = selector.index(pseudo)
 
@@ -23,11 +25,13 @@ let processor = parser(rule => {
         lastSelectorsList = newSelectorsList
       })
 
-      lastSelectorsList.forEach(lastSelector => {
-        selector.parent.insertBefore(selector, lastSelector)
-      })
+      if (detectedPseudoIs) {
+        lastSelectorsList.forEach(lastSelector => {
+          selector.parent.insertBefore(selector, lastSelector)
+        })
 
-      selector.remove()
+        selector.remove()
+      }
     })
 
     resolve()
