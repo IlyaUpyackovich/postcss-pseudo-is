@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": "https://github.com/IlyaUpyackovich/postcss-pseudo-is.git",
   "dependencies": {
-    "postcss": "^7.0.18",
+    "postcss": "^8.2.10",
     "postcss-selector-parser": "^6.0.2"
   },
   "devDependencies": {
