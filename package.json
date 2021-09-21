@@ -1,6 +1,6 @@
 {
   "name": "postcss-pseudo-is",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "PostCSS plugin to transform the :is() CSS pseudo-class into more compatible CSS selectors.",
   "keywords": [
     "postcss",
