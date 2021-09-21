@@ -43,11 +43,11 @@ nav section h1, nav article h1, nav aside h1, nav nav h1 {
 
 ## Install
 ```
-npm i -D postcss-pseudo-is
+npm i -D postcss postcss-pseudo-is
 ```
 or
 ```
-yarn add -D postcss-pseudo-is
+yarn add -D postcss postcss-pseudo-is
 ```
 
 ## :warning: Warning :warning:
